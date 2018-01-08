@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "TWLeftMenu.h"
+#import "TWNavController.h"
+#import "TWNewsController.h"
 
 @interface ViewController ()
 
@@ -27,12 +29,12 @@
     [self.view addSubview:leftMenu];
     
     //
-    UITableViewController *newTab = [[UITableViewController alloc]init];
-    newTab.view.backgroundColor = [UIColor redColor];
-    UINavigationController *newsNav = [[UINavigationController alloc]initWithRootViewController:newTab];
+    TWNewsController *newTab = [[TWNewsController alloc]init];
+    TWNavController *newsNav = [[TWNavController alloc]initWithRootViewController:newTab];
+    [self.view addSubview:newsNav.view];
     [self addChildViewController:newsNav];
-    ;
-
+    
+    
 }
 
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18540F202003C993008C81FA /* TWNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18540F1F2003C993008C81FA /* TWNavController.m */; };
+		18540F232003C9EE008C81FA /* TWNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18540F222003C9EE008C81FA /* TWNewsController.m */; };
+		18540F262003CAAC008C81FA /* TWTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18540F252003CAAC008C81FA /* TWTitleView.m */; };
 		1895D6BD1FEF517D0056A587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895D6BA1FEF517D0056A587 /* AppDelegate.m */; };
 		1895D6C21FEF54C70056A587 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895D6C11FEF54C70056A587 /* UIView+Extension.m */; };
 		1895D6C51FEF56890056A587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895D6C31FEF56890056A587 /* LaunchScreen.storyboard */; };
@@ -19,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18540F1E2003C993008C81FA /* TWNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavController.h; sourceTree = "<group>"; };
+		18540F1F2003C993008C81FA /* TWNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavController.m; sourceTree = "<group>"; };
+		18540F212003C9EE008C81FA /* TWNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNewsController.h; sourceTree = "<group>"; };
+		18540F222003C9EE008C81FA /* TWNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNewsController.m; sourceTree = "<group>"; };
+		18540F242003CAAC008C81FA /* TWTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTitleView.h; sourceTree = "<group>"; };
+		18540F252003CAAC008C81FA /* TWTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTitleView.m; sourceTree = "<group>"; };
 		1895D6B91FEF517D0056A587 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1895D6BA1FEF517D0056A587 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1895D6BF1FEF537E0056A587 /* NetEase.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetEase.pch; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18540F1A1FF8655B008C81FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1895D6B41FEF517D0056A587 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1895D6CA1FF45C3E0056A587 /* Controller */,
-				1895D6CD1FF45C3E0056A587 /* Model */,
+				18540F1A1FF8655B008C81FA /* Model */,
 				1895D6CE1FF45C3E0056A587 /* View */,
 			);
 			path = Main;
@@ -93,15 +109,12 @@
 			children = (
 				1895D6CB1FF45C3E0056A587 /* ViewController.h */,
 				1895D6CC1FF45C3E0056A587 /* ViewController.m */,
+				18540F212003C9EE008C81FA /* TWNewsController.h */,
+				18540F222003C9EE008C81FA /* TWNewsController.m */,
+				18540F1E2003C993008C81FA /* TWNavController.h */,
+				18540F1F2003C993008C81FA /* TWNavController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1895D6CD1FF45C3E0056A587 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1895D6CE1FF45C3E0056A587 /* View */ = {
@@ -111,6 +124,8 @@
 				1895D6D41FF45D3A0056A587 /* UIImage+Extension.m */,
 				1895D6CF1FF45C3E0056A587 /* TWLeftMenu.h */,
 				1895D6D01FF45C3E0056A587 /* TWLeftMenu.m */,
+				18540F242003CAAC008C81FA /* TWTitleView.h */,
+				18540F252003CAAC008C81FA /* TWTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,12 +238,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18540F202003C993008C81FA /* TWNavController.m in Sources */,
 				1895D6BD1FEF517D0056A587 /* AppDelegate.m in Sources */,
 				1895D6C21FEF54C70056A587 /* UIView+Extension.m in Sources */,
 				1895D6D11FF45C3E0056A587 /* ViewController.m in Sources */,
 				1895D6D51FF45D3A0056A587 /* UIImage+Extension.m in Sources */,
 				18D798561FEDC99B000DE828 /* main.m in Sources */,
 				1895D6D21FF45C3E0056A587 /* TWLeftMenu.m in Sources */,
+				18540F232003C9EE008C81FA /* TWNewsController.m in Sources */,
+				18540F262003CAAC008C81FA /* TWTitleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
